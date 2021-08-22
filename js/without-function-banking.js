@@ -1,6 +1,6 @@
 // Handle deposit button event
 document.getElementById('deposit-btn').addEventListener('click', function () {
-    // console.log('Deposit Clicked');
+    // console.log('Deposit Button Clicked');
     // get the amount deposited 
     const depositInput = document.getElementById('deposit-input');
     const depositAmountText = depositInput.value;

@@ -13,8 +13,9 @@ function getInputValue(inputId) {
     const inputField = document.getElementById(inputId);
     const inputAmountText = inputField.value;
     const amountValue = parseFloat(inputAmountText);
-    // Clear input field
+    // Clear input field 
     inputField.value = '';
+    // Return
     return amountValue;
 }
 
@@ -54,7 +55,7 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     }
 });
 // handle withdraw system
-document.getElementById('withdraw-btn').addEventListener('click', function () { 
+document.getElementById('withdraw-btn').addEventListener('click', function () {
     const withdrawAmount = getInputValue('withdraw-input');
     const currentBalance = getCurrentBalance();
     if (withdrawAmount > 0 && withdrawAmount < currentBalance) {
